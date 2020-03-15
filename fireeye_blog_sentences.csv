@@ -46,34 +46,34 @@ Ransomware incidents encrypting data from servers and computers in corporate net
 FireEye Mandiant has responded to at least one similar case where TrickBot was used to deploy Ryuk ransomware at an oil rig manufacturer. 
 "While the infection happened only on corporate networks, the biggest business impact was caused by disruptions of Oracle ERP software driving the company temporarily offline and negatively affecting production."
 "Ransomware may result in similar outcomes when it reaches IT-based assets in OT networks, for example human-machine interfaces (HMIs), supervisory control and data acquisition (SCADA) software, and engineering workstations. "
-Most of this equipment relies on commodity software and standard operating systems that are vulnerable to a variety of IT threats. 
-Mandiant Intelligence is aware of at least one incident in which an industrial facility suffered a plant shutdown due to a large-scale ransomware attack, based on sensitive sources. 
+Most of this equipment relies on commodity software and standard operating systems that are vulnerable to a variety of IT threats.
+"Mandiant Intelligence is aware of at least one incident in which an industrial facility suffered a plant shutdown due to a large-scale ransomware attack, based on sensitive sources."
 "The facility's network was improperly segmented, which allowed the malware to propagate from the corporate network into the OT network, where it encrypted servers, HMIs, workstations, and backups."
 "The facility had to reach out to multiple vendors to retrieve backups, many of which were decades old, which delayed complete restoration of production."
 "As recently as February 2020, the Cybersecurity Infrastructure and Security Agency (CISA) released Alert AA20-049A describing how a post-compromise ransomware incident had affected control and communication assets on the OT network of a natural gas compression facility. "
 "Impacts to HMIs, data historians, and polling servers resulted in loss of availability and loss of view for human operators. "
 This prompted an intentional shut down of operations that lasted two days.
 "Threat actors deploying ransomware have made rapid advances both in terms of effectiveness and as a criminal business model, imposing high operational costs on victims. "
-We encourage all organizations to evaluate their safety and industrial risks related to ransomware attacks. 
+We encourage all organizations to evaluate their safety and industrial risks related to ransomware attacks.
 "Note that these recommendations will also help to build resilience in the face of other threats to business operations (e.g., cryptomining malware infections). "
 "While every case will differ, we highlight the following recommendations."
 "For custom services and actionable intelligence in both IT and OT, contact FireEye Mandiant Consulting, Managed Defense, and Threat Intelligence."
 Conduct tabletop and/or controlled red team exercises to assess the current security posture and ability of your organization to respond to the ransomware threat. 
 "Simulate attack scenarios (mainly in non-production environments) to understand how the incident response team can (or cannot) detect, analyze, and recover from such an attack. "
-Revisit recovery requirements based on the exercise results. 
+Revisit recovery requirements based on the exercise results.
 "In general, repeatedly practicing various threat scenarios will improve awareness and ability to respond to real incidents."
 "Review operations, business processes, and workflows to identify assets that are critical to maintaining continuous industrial operations. "
 "Whenever possible, introduce redundancy for critical assets with low tolerance to downtime."
-The right amount and type of redundancy is unique for each organization and can be determined through risk assessments and cost-benefit analyses. 
+The right amount and type of redundancy is unique for each organization and can be determined through risk assessments and cost-benefit analyses.
 Note that such analyses cannot be conducted without involving business process owners and collaborating across IT and OT.
 "Logically segregate primary and redundant assets either by a network-based or host-based firewall with subsequent asset hardening (e.g., disabling services typically used by ransomware for its propagation, like SMB, RDP, and WMI). "
 "In addition to creating policies to disable unnecessary peer-to-peer and remote connections, we recommend routine auditing of all systems that potentially host these services and protocols. "
 Note that such architecture is generally more resilient to security incidents.
 "When establishing a rigorous back-up program, special attention should be paid to ensuring the security (integrity) of backups. "
 "Critical backups must be kept offline or, at minimum, on a segregated network."
-Optimize recovery plans in terms of recovery time objective. 
-Introduce required alternative workflows (including manual) for the duration of recovery. 
-This is especially critical for organizations with limited or no redundancy of critical assets. 
+Optimize recovery plans in terms of recovery time objective.
+Introduce required alternative workflows (including manual) for the duration of recovery.
+This is especially critical for organizations with limited or no redundancy of critical assets.
 "When recovering from backups, harden recovered assets and the entire organization's infrastructure to prevent recurring ransomware infection and propagation."
 "Establish clear ownership and management of OT perimeter protection devices to ensure emergency, enterprise-wide changes are possible. "
 Effective network segmentation must be maintained during containment and active intrusions.
