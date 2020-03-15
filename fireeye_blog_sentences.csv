@@ -1,17 +1,17 @@
 sentence
 "Since at least 2017, there has been a significant increase in public disclosures of ransomware incidents impacting industrial production and critical infrastructure organizations."
 "Well-known ransomware families like WannaCry, LockerGoga, MegaCortex, Ryuk, Maze, and now SNAKEHOSE (a.k.a. Snake / Ekans), have cost victims across a variety of industry verticals many millions of dollars in ransom and collateral costs."
-"These incidents have also resulted in significant disruptions and delays to the physical processes that enable organizations to produce and deliver goods and services."
-"While lots of information has been shared about the victims and immediate impacts of industrial sector ransomware distribution operations, the public discourse continues to miss the big picture." 
+These incidents have also resulted in significant disruptions and delays to the physical processes that enable organizations to produce and deliver goods and services.
+"While lots of information has been shared about the victims and immediate impacts of industrial sector ransomware distribution operations, the public discourse continues to miss the big picture."
 "As financial crime actors have evolved their tactics from opportunistic to post-compromise ransomware deployment, we have observed an increase in adversaries’ internal reconnaissance that enables them to target systems that are vital to support the chain of production."
 "As a result, ransomware infections—either affecting critical assets in corporate networks or reaching computers in OT networks—often result in the same outcome: insufficient or late supply of end products or services."
-Truly understanding the unique nuances of industrial sector ransomware distribution operations requires a combination of skillsets and visibility across both IT and OT systems. 
+Truly understanding the unique nuances of industrial sector ransomware distribution operations requires a combination of skillsets and visibility across both IT and OT systems.
 "Using examples derived from our consulting engagements and threat research, we will explain how the shift to post-compromise ransomware operations is fueling adversaries’ ability to disrupt industrial operations."
-The traditional approach to ransomware attacks predominantly relies on a “shotgun” methodology that consists of indiscriminate campaigns spreading malware to encrypt files and data from a variety of victims. 
+The traditional approach to ransomware attacks predominantly relies on a “shotgun” methodology that consists of indiscriminate campaigns spreading malware to encrypt files and data from a variety of victims.
 "Actors following this model will extort victims for an average of $500 to $1,000 USD and hope to receive payments from as many individuals as possible. "
 "While early ransomware campaigns adopting this approach were often considered out of scope for OT security, recent campaigns targeting entire industrial and critical infrastructure organizations have moved toward adopting a more operationally complex post-compromise approach."
 "In post-compromise ransomware incidents, a threat actor may still often rely on broadly distributed malware to obtain their initial access to a victim environment, but once on a network they will focus on gaining privileged access so they can explore the target networks and identify critical systems before deploying the ransomware. "
-This approach also makes it possible for the attacker to disable security processes that would normally be enough to detect known ransomware indicators or behaviors. 
+This approach also makes it possible for the attacker to disable security processes that would normally be enough to detect known ransomware indicators or behaviors.
 "Actors cast wider nets that may impact critical systems, which  expand the scale and effectiveness of their end-stage operations by inflicting maximum pain on the victim."
 "As a result, they are better positioned to negotiate and can often demand much higher ransoms—which are commonly commensurate with the victims’ perceived ability to pay and the value of the ransomed assets themselves. "
 "For more information, including technical detail, on similar activity, see our recent blog posts on FIN6 and TEMP.MixMaster."
