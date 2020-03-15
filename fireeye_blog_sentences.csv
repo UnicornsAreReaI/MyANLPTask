@@ -93,7 +93,7 @@ These binary format files contain information that can be used to access other d
 LNK shortcut files are one type of Shell Item.
 They are created by the Windows operating system automatically when a user accesses a file from a supported application but can also be created by the user manually.
 "LNK shortcut files typically contain metadata about the accessed file, including the file name and size, the original path, timestamps, volume and system information (ex. drive type and system hostname), and network information (ex. network share path)."
-Fortunately, there are tools available that can parse these files.
+"Fortunately, there are tools available that can parse these files."
 "While internally at Mandiant we leverage FireEye Endpoint Security to parse LNK files and identify suspicious user search terms, for the purposes of this blog post we will be using LECmd by Eric Zimmerman."
 "Parsed metadata within LNK shortcut files is relevant to forensic investigations for multiple use cases, including profiling user activity on a system or searching for references to malware that has since been deleted."
 "Recently, Mandiant encountered LNK files whose format we did not initially recognize."
