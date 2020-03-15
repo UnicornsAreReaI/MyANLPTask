@@ -5,13 +5,13 @@ These incidents have also resulted in significant disruptions and delays to the 
 "While lots of information has been shared about the victims and immediate impacts of industrial sector ransomware distribution operations, the public discourse continues to miss the big picture."
 "As financial crime actors have evolved their tactics from opportunistic to post-compromise ransomware deployment, we have observed an increase in adversaries’ internal reconnaissance that enables them to target systems that are vital to support the chain of production."
 "As a result, ransomware infections—either affecting critical assets in corporate networks or reaching computers in OT networks—often result in the same outcome: insufficient or late supply of end products or services."
-Truly understanding the unique nuances of industrial sector ransomware distribution operations requires a combination of skillsets and visibility across both IT and OT systems.
+Truly understanding the unique nuances of industrial sector ransomware distribution operations requires a combination of skillsets and visibility across both IT and OT systems. 
 "Using examples derived from our consulting engagements and threat research, we will explain how the shift to post-compromise ransomware operations is fueling adversaries’ ability to disrupt industrial operations."
-The traditional approach to ransomware attacks predominantly relies on a “shotgun” methodology that consists of indiscriminate campaigns spreading malware to encrypt files and data from a variety of victims.
+The traditional approach to ransomware attacks predominantly relies on a “shotgun” methodology that consists of indiscriminate campaigns spreading malware to encrypt files and data from a variety of victims. 
 "Actors following this model will extort victims for an average of $500 to $1,000 USD and hope to receive payments from as many individuals as possible. "
 "While early ransomware campaigns adopting this approach were often considered out of scope for OT security, recent campaigns targeting entire industrial and critical infrastructure organizations have moved toward adopting a more operationally complex post-compromise approach."
 "In post-compromise ransomware incidents, a threat actor may still often rely on broadly distributed malware to obtain their initial access to a victim environment, but once on a network they will focus on gaining privileged access so they can explore the target networks and identify critical systems before deploying the ransomware. "
-This approach also makes it possible for the attacker to disable security processes that would normally be enough to detect known ransomware indicators or behaviors.
+This approach also makes it possible for the attacker to disable security processes that would normally be enough to detect known ransomware indicators or behaviors. 
 "Actors cast wider nets that may impact critical systems, which  expand the scale and effectiveness of their end-stage operations by inflicting maximum pain on the victim."
 "As a result, they are better positioned to negotiate and can often demand much higher ransoms—which are commonly commensurate with the victims’ perceived ability to pay and the value of the ransomed assets themselves. "
 "For more information, including technical detail, on similar activity, see our recent blog posts on FIN6 and TEMP.MixMaster."
@@ -46,34 +46,34 @@ Ransomware incidents encrypting data from servers and computers in corporate net
 FireEye Mandiant has responded to at least one similar case where TrickBot was used to deploy Ryuk ransomware at an oil rig manufacturer. 
 "While the infection happened only on corporate networks, the biggest business impact was caused by disruptions of Oracle ERP software driving the company temporarily offline and negatively affecting production."
 "Ransomware may result in similar outcomes when it reaches IT-based assets in OT networks, for example human-machine interfaces (HMIs), supervisory control and data acquisition (SCADA) software, and engineering workstations. "
-Most of this equipment relies on commodity software and standard operating systems that are vulnerable to a variety of IT threats.
-"Mandiant Intelligence is aware of at least one incident in which an industrial facility suffered a plant shutdown due to a large-scale ransomware attack, based on sensitive sources."
+Most of this equipment relies on commodity software and standard operating systems that are vulnerable to a variety of IT threats. 
+Mandiant Intelligence is aware of at least one incident in which an industrial facility suffered a plant shutdown due to a large-scale ransomware attack, based on sensitive sources. 
 "The facility's network was improperly segmented, which allowed the malware to propagate from the corporate network into the OT network, where it encrypted servers, HMIs, workstations, and backups."
 "The facility had to reach out to multiple vendors to retrieve backups, many of which were decades old, which delayed complete restoration of production."
 "As recently as February 2020, the Cybersecurity Infrastructure and Security Agency (CISA) released Alert AA20-049A describing how a post-compromise ransomware incident had affected control and communication assets on the OT network of a natural gas compression facility. "
 "Impacts to HMIs, data historians, and polling servers resulted in loss of availability and loss of view for human operators. "
 This prompted an intentional shut down of operations that lasted two days.
 "Threat actors deploying ransomware have made rapid advances both in terms of effectiveness and as a criminal business model, imposing high operational costs on victims. "
-We encourage all organizations to evaluate their safety and industrial risks related to ransomware attacks.
+We encourage all organizations to evaluate their safety and industrial risks related to ransomware attacks. 
 "Note that these recommendations will also help to build resilience in the face of other threats to business operations (e.g., cryptomining malware infections). "
 "While every case will differ, we highlight the following recommendations."
 "For custom services and actionable intelligence in both IT and OT, contact FireEye Mandiant Consulting, Managed Defense, and Threat Intelligence."
 Conduct tabletop and/or controlled red team exercises to assess the current security posture and ability of your organization to respond to the ransomware threat. 
 "Simulate attack scenarios (mainly in non-production environments) to understand how the incident response team can (or cannot) detect, analyze, and recover from such an attack. "
-Revisit recovery requirements based on the exercise results.
+Revisit recovery requirements based on the exercise results. 
 "In general, repeatedly practicing various threat scenarios will improve awareness and ability to respond to real incidents."
 "Review operations, business processes, and workflows to identify assets that are critical to maintaining continuous industrial operations. "
 "Whenever possible, introduce redundancy for critical assets with low tolerance to downtime."
-The right amount and type of redundancy is unique for each organization and can be determined through risk assessments and cost-benefit analyses.
+The right amount and type of redundancy is unique for each organization and can be determined through risk assessments and cost-benefit analyses. 
 Note that such analyses cannot be conducted without involving business process owners and collaborating across IT and OT.
 "Logically segregate primary and redundant assets either by a network-based or host-based firewall with subsequent asset hardening (e.g., disabling services typically used by ransomware for its propagation, like SMB, RDP, and WMI). "
 "In addition to creating policies to disable unnecessary peer-to-peer and remote connections, we recommend routine auditing of all systems that potentially host these services and protocols. "
 Note that such architecture is generally more resilient to security incidents.
 "When establishing a rigorous back-up program, special attention should be paid to ensuring the security (integrity) of backups. "
 "Critical backups must be kept offline or, at minimum, on a segregated network."
-Optimize recovery plans in terms of recovery time objective.
-Introduce required alternative workflows (including manual) for the duration of recovery.
-This is especially critical for organizations with limited or no redundancy of critical assets.
+Optimize recovery plans in terms of recovery time objective. 
+Introduce required alternative workflows (including manual) for the duration of recovery. 
+This is especially critical for organizations with limited or no redundancy of critical assets. 
 "When recovering from backups, harden recovered assets and the entire organization's infrastructure to prevent recurring ransomware infection and propagation."
 "Establish clear ownership and management of OT perimeter protection devices to ensure emergency, enterprise-wide changes are possible. "
 Effective network segmentation must be maintained during containment and active intrusions.
@@ -83,3 +83,60 @@ Effective network segmentation must be maintained during containment and active 
 "Therefore, all recommendations should be carefully considered in the context of the individual infrastructures. "
 "For instance, proper network segmentation is highly advisable for mitigating the spread of ransomware."
 "However, organizations with limited budgets may instead decide to leverage redundant asset diversification, host-based firewalls, and hardening as an alternative to segregating with hardware firewalls."
+"Forensic investigators use LNK shortcut files to recover metadata about recently accessed files, including files deleted after the time of access. "
+"In a recent investigation, FireEye Mandiant encountered LNK files that indicated an attacker accessed files included in Windows Explorer search results. "
+"In our experience, this was a new combination of forensic artifacts. "
+"We’re excited to share our findings because they help to paint a more complete picture of an attacker’s actions and objectives on targeted systems. "
+"Further, these findings can also be leveraged for insider threat cases to determine the path used to locate and subsequently open a file."
+The .lnk extension is associated with a class of files known as Shell Items.
+These binary format files contain information that can be used to access other data objects in the Windows shell (the graphical user interface).
+LNK shortcut files are one type of Shell Item.
+They are created by the Windows operating system automatically when a user accesses a file from a supported application but can also be created by the user manually.
+"LNK shortcut files typically contain metadata about the accessed file, including the file name and size, the original path, timestamps, volume and system information (ex. drive type and system hostname), and network information (ex. network share path)."
+Fortunately, there are tools available that can parse these files.
+"While internally at Mandiant we leverage FireEye Endpoint Security to parse LNK files and identify suspicious user search terms, for the purposes of this blog post we will be using LECmd by Eric Zimmerman."
+"Parsed metadata within LNK shortcut files is relevant to forensic investigations for multiple use cases, including profiling user activity on a system or searching for references to malware that has since been deleted."
+"Recently, Mandiant encountered LNK files whose format we did not initially recognize."
+The files came from a Windows Server 2012 R2 system and had paths like those shown in Figure 2. 
+"We guessed that they were LNK shortcut files based on their extension and file path; however, their content was not familiar to us."
+"In the previous examples, a forensic investigator would use the LNK shortcut filename to conclude that a user opened a file named passw or gov."
+"Then, they would use a tool like LECmd to recover additional metadata."
+This would provide them with the full file path of the accessed file and the timestamps of the file at the time it was accessed - among other forensic information.
+However, the previous LNK files did not reveal expected metadata.
+"Of note, none of the expected information for LNK shortcut files is present."
+"However, there were strings of interest in the Target ID Information section including Search Folder\passw as well as Search Results in Local Disk (C:). "
+"Notice that the target file timestamps, file size, full file path, and other expected file metadata are present (some information omitted for clarity)."
+"Fortunately, during the investigation we also parsed the user’s NTUSER.DAT registry file (using Harlan Carvey’s RegRipper) and reviewed the WorldWheelQuery key which details user Explorer search history."
+The passw.lnk file suddenly became more interesting! 
+Note that the search history includes the same term we observed in the LNK file: passw.
+"Via the WorldWheelQuery registry key, we identified passw as the second most recent term in the user’s Explorer search history according to the MRUListEx order."
+"MRUListEx is a registry value that lists the order in which other values have most recently been accessed—essentially, the order in which terms were searched in Explorer. "
+passw also matched the filename of the unusual LNK file that contained the string Search Results in Local Disk (C:) (see Figure 3).
+These details seemed to suggest that LNK files were being created as a result of user Explorer searches.
+"Therefore, we’ve started calling these “user search LNK files”."
+"After searching the system for LNK files with the terms listed in the user’s Explorer search history, we found that not all terms had associated user search LNK files. "
+Figure 6 displays LNK files and their accompanying file creation and modification timestamps that we identified as a result of this search.
+"Note that while we found 15 searches via the WorldWheelQuery registry key, there are only four (4) user search LNK files"
+"Additionally, we noticed pairs of LNK files created at the same time that had similar names. "
+"As an example, Figure 7 lists two LNK files that were both created at 2019-11-09 08:38:29 UTC."
+"After further testing, we determined that the system created user search LNK files as a result of Explorer searches where the user opened one of the files produced as a result of this search. "
+User search LNK files were not created if the user did not open a file returned by the search.
+"In this example, the password.lnk file contained target file metadata, as would be expected for LNK shortcut files, and referenced a target file named password.txt located in the T:\ directory. passw.lnk, as previously discussed, only contained expected metadata for a user search LNK file, including the absolute path Search Folder\passw with reference to Search Results in Local Disk (C:). "
+"However, this discrepancy in directory—the user search LNK file search context of Search Results in Local Disk (C:) and the LNK shortcut file located in the T:\ drive—is actually as expected."
+"LNK shortcut files contain metadata for the most recently accessed file, and we found the same to be true for user search LNK files. "
+"Based on differing creation and modification timestamps for passw.lnk, we know the user searched for passw in at least one other instance (we’re not able to conclude whether a search happened between these two points in time) and opened a file from the search results. "
+This is seen in the timestamps for the passw user search LNK file in Figure 8.
+"The second occurrence of a search for passw occurred on November 13, 2019. "
+"In this instance, the user again searched for the term passw using Windows Explorer search, but this time searched within the context of the C:\ drive (Search Results in Local Disk (C:)), and subsequently clicked on a document named password2.txt. "
+The results from LECmd for password2.lnk can be seen in Figure 9 (some information omitted for clarity and to protect client information).
+Notice the information embedded in user search LNK files is also embedded within the LNK shortcut file that is created simultaneously with the user search LNK file (underlined text).
+The search context for passw.lnk and full file path location for password2.lnk both match: C:\.
+The takeaway here is that user search LNK files are only related to the search term and not search context.
+"This means later searches for the same search term, e.g. passw, when the user subsequently opens a search result, but in a different drive or directory changes the modification timestamp for the user search LNK file as well as the search context contained in the user search LNK file. "
+"This keeps in step with LNK shortcut files, which are dependent on a simple filename—not the full file path."
+"Historically, due to the structure of the WorldWheelQuery registry key and available timestamps in the Windows Registry, investigators could only determine the search time of the most recent term using the last modification time of the registry key. "
+"With user search LNK files, new timestamps are available to determine the times a user searched for a specific term when the user subsequently opened a file from the search. "
+"Going further, we can combine evidence from the user search LNK files and the WorldWheelQuery MRUlistEx registry key value to infer the order of searches completed by the user. "
+"For instance, since the user searched for gov (WorldWheelQuery search index 4), passw (index 6), and private (index 7), we can infer they also searched for air (index 5) but didn't open any files resulting from this search."
+LNK shortcut files have been a reliable method to determine user access to files and the associated file metadata at the time of access.
+"With user search LNK files, we can now enrich our Windows Explorer search history findings and gain a more detailed picture of user activity through additional timestamps of user Explorer searches with subsequent access to files from the search."
