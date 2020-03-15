@@ -102,7 +102,7 @@ The files came from a Windows Server 2012 R2 system and had paths like those sho
 "In the previous examples, a forensic investigator would use the LNK shortcut filename to conclude that a user opened a file named passw or gov."
 "Then, they would use a tool like LECmd to recover additional metadata."
 This would provide them with the full file path of the accessed file and the timestamps of the file at the time it was accessed - among other forensic information.
-However, the previous LNK files did not reveal expected metadata.
+"However, the previous LNK files did not reveal expected metadata."
 "Of note, none of the expected information for LNK shortcut files is present."
 "However, there were strings of interest in the Target ID Information section including Search Folder\passw as well as Search Results in Local Disk (C:). "
 "Notice that the target file timestamps, file size, full file path, and other expected file metadata are present (some information omitted for clarity)."
